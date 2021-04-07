@@ -245,7 +245,7 @@ section .article p {
 
 .background img {
   position: absolute;
-  bottom: -10%;
+  bottom: -20%;
 }
 
 .backgroundTitle.fixed {
@@ -256,72 +256,132 @@ section .article p {
   background-color: #f0cdc3;
   padding-top: 0;
   position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.chooseCookies {
-  padding: 15% 0;
-  height: 100%;
+.playBox {
+  background: #f0cdc3;
+  height: 60%;
   width: 100%;
 }
 
-.chooseCookies .cookies {
-  margin-bottom: -10%;
+.swiper-slide {
+  background: #f0cdc3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cookies {
   position: relative;
-}
-
-.chooseCookies .cookies .roundWord {
-  font-family: "EB Garamond", serif;
-  color: #0c6a41;
-  font-size: 150%;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-.chooseCookies .cookies img {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 25%;
-}
-
-.chooseCookies .name {
+  margin: 0 auto;
   text-align: center;
-  font-family: "EB Garamond", serif;
+}
+
+.cookies .roundWord {
   color: #0c6a41;
-  margin: 35% 0 0 0;
+  font-family: "EB Garamond", serif;
   font-size: 2rem;
+  margin-bottom: -10%;
 }
 
-.chooseCookies p {
-  text-align: center;
-  color: white;
-  margin: 1% 0 2% 0;
+.cookies img {
+  width: 40%;
 }
 
-.chooseCookies .musicLine {
-  width: 22%;
-  margin-left: 39%;
-  margin-bottom: 2%;
+.cookies .name {
+  color: #0c6a41;
+  font-family: "EB Garamond", serif;
+  font-size: 2rem;
+  margin: -10% 0 1% 0;
 }
 
-.chooseCookies .change {
+.cookies .maxMusicInformation {
+  overflow: hidden;
   width: 20%;
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  text-align: center;
-  color: #0c6a41;
-  font-size: 1.5rem;
+}
+
+.cookies .maxMusicInformation .musicInformation {
+  color: white;
+  font-family: "Syne", sans-serif;
+  -webkit-animation: musicInformation 5s linear infinite;
+          animation: musicInformation 5s linear infinite;
+}
+
+@-webkit-keyframes musicInformation {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@keyframes musicInformation {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+.controller {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.controller .musicLine {
+  margin: 0 0 1% 0;
+  width: 20%;
+}
+
+.change {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 20%;
+  color: #0c6a41;
+  font-size: 1.5rem;
+}
+
+.change i {
+  outline: none;
+}
+
+.change i:nth-child(2):hover, .change i:nth-child(4):hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 /*# sourceMappingURL=all.css.map */

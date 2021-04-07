@@ -181,7 +181,7 @@ section{
   }
   img{
     position: absolute;
-    bottom: -10%;
+    bottom: -20%;
   }
 }
 
@@ -189,63 +189,92 @@ section{
   position: fixed;
 }
 
-// not yet
 .musicSection{
   background-color: #f0cdc3;
   padding-top: 0;
   position: relative;
+  flex-direction: column;
 }
 
-.chooseCookies{
-  padding: 15% 0;
-  height: 100%;
+.playBox{
+  background: #f0cdc3;
+  height: 60%;
   width: 100%;
-  .cookies{
+}
+
+.swiper-slide {
+  background: #f0cdc3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cookies{
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  .roundWord{
+    color: $main-color;
+    font-family: $font-title;
+    font-size: 2rem;
     margin-bottom: -10%;
-    position: relative;
-    .roundWord{
-      font-family: $font-title;
-      color: $main-color;
-      font-size: 150%;
-      transform: rotate(90deg);
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-    img{
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 25%;
-    }
+  }
+  img{
+    width: 40%;
   }
   .name{
-    text-align: center;
-    font-family: $font-title;
     color: $main-color;
-    margin: 35% 0 0 0;
+    font-family: $font-title;
     font-size: 2rem;
+    margin: -10% 0 1% 0;
   }
-  p{
-    text-align: center;
-    color: white;
-    margin: 1% 0 2% 0;
-  }
-  .musicLine{
-    width: 22%;
-    margin-left: 39%;
-    margin-bottom: 2%;
-  }
-  .change{
+  .maxMusicInformation{
+    overflow: hidden;
     width: 20%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    text-align: center;
-    color: $main-color;
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: space-around;
+    .musicInformation{
+      color: white;
+      font-family: $font-p;
+      animation: musicInformation 5s linear infinite;
+    }
+  }
+}
+
+@keyframes musicInformation{
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(100%);
+  }
+}
+
+.controller{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .musicLine{
+    margin: 0 0 1% 0;
+    width: 20%;
+  }
+}
+
+.change{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20%;
+  color: #0c6a41;
+  font-size: 1.5rem;
+  i{
+    outline: none;
+    &:nth-child(2), &:nth-child(4){
+      &:hover{
+        transform: scale(1.5);
+      }
+    }
   }
 }
 

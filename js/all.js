@@ -1,5 +1,6 @@
 //  round text
-$('.roundWord').arctext({radius: 140, dir: 1});
+$('.roundWord').arctext({radius: 150, dir: 1});
+
 
 const nav = document.querySelector('nav')
 const backgroundTitle = document.querySelector('.backgroundTitle')
@@ -7,9 +8,6 @@ const height = window.screen.height
 
 window.addEventListener('scroll', function(){
   nav.classList.toggle('active', window.scrollY > 50)
-
-  // not yet
-  console.log(window.scrollY, height)
 })
 
 
@@ -63,3 +61,13 @@ new ScrollMagic.Scene({
 .setClassToggle(".backgroundTitle", "fixed") 
 // .addIndicators() 
 .addTo(controller3);
+
+
+
+
+var swiper = new Swiper('.playBox', {
+  navigation: {
+    nextEl: '.fa-step-forward',
+    prevEl: '.fa-step-backward',
+  },
+});
