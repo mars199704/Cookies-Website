@@ -23,15 +23,19 @@
     <img src="./img/cookieLogo.png" alt="">
   </div>
   <ul>
-    <li class="navMain"><a href="#">main</a></li>
-    <li class="navAbout"><a href="#">about</a></li>
-    <li class="navNews"><a href="#">news</a></li>
-    <li class="navProducts"><a href="#">products<a></li>
-    <li class="navStore"><a href="#">store</a></li>
+    <li class="navMain"><a href="#main">main</a></li>
+    <li class="navAbout"><a href="#about">about</a></li>
+    <li class="navNews"><a href="#news">news</a></li>
+    <li class="navProducts"><a href="#products">products<a></li>
+    <li class="navStore"><a href="#store">store</a></li>
   </ul>
 </nav>
 
-<header class="mainPage">
+<div class="ham">
+  <div class="line"></div>
+</div>
+
+<header class="mainPage" id="main">
   <div class="mainLeft">
     <div class="smallWords">
       <img src="./img/quotes.png" alt="" class="quote">
@@ -70,9 +74,9 @@
   </div>
 </header>
 
-<section class="aboutSection">
+<section class="aboutSection" id="about">
   <div class="picture">
-    <h2 id="about">About</h2>
+    <h2 class="about">About</h2>
     <img src="./img/cookie-about.jpg" alt="">
   </div>
   <div class="article">
@@ -86,9 +90,9 @@
   </div>
 </section>
 
-<section class="newsSection">
+<section class="newsSection" id="news">
   <div class="picture">
-    <h2 id="news">News</h2>
+    <h2 class="news">News</h2>
     <img src="./img/cookie-news.jpg" alt="">
   </div>
   <div class="article">
@@ -108,7 +112,7 @@
   <img src="./img/cookieBackground.png" alt="">
 </section>
 
-<section class="musicSection">
+<section class="musicSection" id="products">
 
   <div class="playBox">
     <div class="swiper-wrapper">

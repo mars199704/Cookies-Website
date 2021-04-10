@@ -1,7 +1,26 @@
 const nav = document.querySelector('nav')
 const backgroundTitle = document.querySelector('.backgroundTitle')
 const height = window.screen.height
-const mainPictureBackground = document.querySelectorAll('.mainPictureBackground img')
+const ham = document.querySelector('.ham')
+const li = document.querySelectorAll('nav ul li')
+
+ham.addEventListener('click', function(){
+  ham.classList.toggle('open')
+  nav.classList.toggle('open')
+})
+
+li.forEach(li => {
+  li.addEventListener('click', function(){
+    ham.classList.remove('open')
+    nav.classList.remove('open')
+  })
+})
+
+window.addEventListener('click', function(){
+  console.log(this)
+})
+
+
 
 window.addEventListener('scroll', function(){
   nav.classList.toggle('active', window.scrollY > 50)
@@ -42,12 +61,12 @@ tlHead.to(".mainPicture",2, {
 //  about page animation
 var aboutController = new ScrollMagic.Controller();
 var tl = new TimelineMax();
-tl.from("#about", .5, {x:-300, opacity:0});
-tl.to("#about", .5, {x:0, opacity:1});
+tl.from(".about", .5, {x:-300, opacity:0});
+tl.to(".about", .5, {x:0, opacity:1});
 tl.from(".aboutWord", .5, {y:300, opacity:0}, "=-1");
 tl.to(".aboutWord", .5, {y:0, opacity:1});
 
-var scene = new ScrollMagic.Scene({
+var scene1 = new ScrollMagic.Scene({
   triggerElement: ".aboutSection",
   triggerHook: 0
 })
@@ -63,13 +82,13 @@ var scene = new ScrollMagic.Scene({
 //  news page animation
 var newsController = new ScrollMagic.Controller();
 var tl2 = new TimelineMax();
-tl2.from("#news", .5, {y:-300, opacity:0});
-tl2.to("#news", .5, {y:0, opacity:1});
+tl2.from(".news", .5, {y:-300, opacity:0});
+tl2.to(".news", .5, {y:0, opacity:1});
 tl2.from(".newsWord", .5, {x:-300, opacity:0}, "=-1");
 tl2.to(".newsWord", .5, {x:0, opacity:1});
 
 
-var scene = new ScrollMagic.Scene({
+var scene2 = new ScrollMagic.Scene({
   triggerElement: ".newsSection",
   triggerHook: 0
 })
