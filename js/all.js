@@ -70,11 +70,11 @@ var scene1 = new ScrollMagic.Scene({
   triggerElement: ".aboutSection",
   triggerHook: 0
 })
-  .addIndicators({
-    colorTrigger: "black",
-    colorStart: "black",
-    colorEnd: "black",
-  })
+  // .addIndicators({
+  //   colorTrigger: "black",
+  //   colorStart: "black",
+  //   colorEnd: "black",
+  // })
   .setTween(tl)
   .addTo(aboutController);
 
@@ -92,11 +92,11 @@ var scene2 = new ScrollMagic.Scene({
   triggerElement: ".newsSection",
   triggerHook: 0
 })
-  .addIndicators({
-    colorTrigger: "black",
-    colorStart: "black",
-    colorEnd: "black",
-  })
+  // .addIndicators({
+  //   colorTrigger: "black",
+  //   colorStart: "black",
+  //   colorEnd: "black",
+  // })
   .setTween(tl2)
   .addTo(newsController);
 

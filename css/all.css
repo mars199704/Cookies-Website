@@ -582,6 +582,10 @@ section .article span {
           transform: scale(1.5);
 }
 
+.change i:nth-child(3) {
+  font-size: 3rem;
+}
+
 @media (max-width: 1026px) {
   .mainPage {
     height: 85vh;
@@ -729,8 +733,11 @@ section .article span {
   }
   .change {
     width: 60%;
-    font-size: 2rem;
+    font-size: 3rem;
     margin-top: 2%;
+  }
+  .change i:nth-child(3) {
+    font-size: 4rem;
   }
 }
 
@@ -892,6 +899,9 @@ section .article span {
     font-size: 2rem;
     line-height: 2rem;
   }
+  section {
+    padding-top: 30%;
+  }
   section .picture h2 {
     left: -15%;
     top: 20%;
@@ -935,6 +945,9 @@ section .article span {
     width: 60%;
     font-size: 1rem;
     margin-top: 2%;
+  }
+  .change i:nth-child(3) {
+    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=all.css.map */
