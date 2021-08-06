@@ -1,20 +1,20 @@
 $main-color: #0c6a41;
 $second-color: #f0cdc3;
-$font-title: 'EB Garamond', serif;
-$font-p:'Syne', sans-serif;
-*{
+$font-title: "EB Garamond", serif;
+$font-p: "Syne", sans-serif;
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  img{
-    max-width:100%;
-    height:auto;
+  img {
+    max-width: 100%;
+    height: auto;
   }
 }
 
 //  before it start
 
-.firstBackground{
+.firstBackground {
   position: absolute;
   top: 0;
   left: 0;
@@ -24,12 +24,12 @@ $font-p:'Syne', sans-serif;
   z-index: 200000;
 }
 
-.title{
+.title {
   font-family: $font-title;
   color: $main-color;
 }
 
-h2{
+h2 {
   font-size: 4.5rem;
   color: $main-color;
   font-family: $font-title;
@@ -37,7 +37,7 @@ h2{
 
 //  nav
 
-nav{
+nav {
   position: fixed;
   top: 0;
   width: 100%;
@@ -49,38 +49,40 @@ nav{
   transition: all 1s;
   z-index: 10;
   padding: 0 5%;
-  .logo{
+  .logo {
     height: 100%;
     display: flex;
     align-items: center;
-    img{
-      height: 80%
+    img {
+      height: 80%;
     }
   }
 }
 
-nav.active{
+nav.active {
   height: 10vh;
   background-color: transparent;
-  a{color: black;}
+  a {
+    color: black;
+  }
 }
 
-ul{
+ul {
   flex-grow: 1;
   display: flex;
   justify-content: flex-end;
-  li{
+  li {
     list-style: none;
     position: relative;
     overflow: hidden;
     margin-left: 5%;
-    a{
+    a {
       text-decoration: none;
       color: $main-color;
       font-family: $font-p;
       position: relative;
-      &::after{
-        content: '';
+      &::after {
+        content: "";
         position: absolute;
         bottom: 0;
         left: 0;
@@ -88,9 +90,9 @@ ul{
         height: 2px;
         background-color: $main-color;
         transform: translateY(3px);
-        transition: all .25s ease-in-out;
+        transition: all 0.25s ease-in-out;
       }
-      &:hover::after{
+      &:hover::after {
         transform: translateY(0px);
       }
     }
@@ -99,36 +101,36 @@ ul{
 
 //  header
 
-.mainPage{
+.mainPage {
   width: 100%;
   height: 110vh;
-  background:#fff;
+  background: #fff;
   z-index: 2;
   display: grid;
   grid-template-columns: 3fr 7fr;
   margin-top: 15vh;
 }
 
-.mainLeft{
+.mainLeft {
   margin-left: 30%;
   width: 100%;
-  .quote{
+  .quote {
     width: 5%;
     margin: 20% 0 -3% -8%;
   }
-  p{
+  p {
     color: $main-color;
     font-family: $font-p;
     font-size: 1.5rem;
   }
 }
 
-.title{
+.title {
   width: 100%;
   height: 200%;
   margin-top: 5%;
   margin-left: 5%;
-  span{
+  span {
     width: 100%;
     font-size: 7rem;
     text-align: left;
@@ -136,8 +138,8 @@ ul{
     z-index: 2;
     line-height: 7rem;
     position: relative;
-    &::after{
-      content: '';
+    &::after {
+      content: "";
       position: absolute;
       width: 100%;
       height: 3px;
@@ -145,7 +147,7 @@ ul{
       bottom: 10%;
       left: 0;
     }
-    .box{
+    .box {
       position: absolute;
       top: 20%;
       width: 100%;
@@ -156,14 +158,14 @@ ul{
   }
 }
 
-.dateMobile{
+.dateMobile {
   display: none;
 }
 
-.mainRight{
+.mainRight {
   overflow: hidden;
   position: relative;
-  .date{
+  .date {
     margin-right: 10%;
     display: flex;
     position: absolute;
@@ -172,32 +174,32 @@ ul{
     z-index: 3;
     color: $main-color;
     font-family: $font-title;
-    h1{
+    h1 {
       font-size: 9rem;
       line-height: 9rem;
       margin-right: 10%;
     }
-    p{
+    p {
       font-weight: 500;
       font-size: 2rem;
       line-height: 2rem;
       border-bottom: $main-color solid 2px;
-      &:nth-child(1){
+      &:nth-child(1) {
         margin-top: 50%;
       }
     }
   }
 
-  .mainPicture{
+  .mainPicture {
     width: 100%;
     position: relative;
-    img{
+    img {
       width: 85%;
       position: absolute;
       left: 10%;
     }
-    .mainPictureBackground{
-      img{
+    .mainPictureBackground {
+      img {
         top: 0;
         left: 20%;
       }
@@ -205,25 +207,25 @@ ul{
   }
 }
 
-.mainPictureBackground img.active{
+.mainPictureBackground img.active {
   animation: changeBg 10s ease-in-out infinite;
 }
 
-@keyframes changeBg{
-  0%{
+@keyframes changeBg {
+  0% {
     opacity: 1;
   }
-  50%{
+  50% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
 
-//  section 
+//  section
 
-section{
+section {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -232,30 +234,30 @@ section{
   overflow: hidden;
   padding: 10% 10% 0 10%;
   margin: 0%;
-  .picture{
+  .picture {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     position: relative;
-    h2{
+    h2 {
       position: absolute;
       left: -15%;
       top: 30%;
       transform: rotate(90deg);
     }
-    img{
+    img {
       width: 60%;
       height: 50%;
     }
   }
-  .article{
+  .article {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    span{
+    span {
       color: $main-color;
       font-size: 1.5rem;
       font-family: $font-p;
@@ -268,51 +270,50 @@ section{
   }
 }
 
-.newsSection{
-  .picture{
+.newsSection {
+  .picture {
     order: 2;
     display: flex;
     justify-content: flex-end;
-    h2{
+    h2 {
       top: 18%;
       left: 35%;
       transform: rotate(0);
     }
   }
-  .article{
+  .article {
     order: 1;
   }
-  h3{
+  h3 {
     font-size: 2rem;
     color: $main-color;
     font-family: $font-title;
   }
 }
 
-.background{
+.background {
   bottom: -30%;
   width: 100%;
   flex-direction: column;
   justify-content: flex-end;
   position: relative;
   padding: 0;
-  h2{
+  h2 {
     position: absolute;
     bottom: 50%;
     font-size: 7rem;
   }
-  img{
+  img {
     position: absolute;
     bottom: -20%;
   }
 }
 
-.backgroundTitle.fixed{
+.backgroundTitle.fixed {
   position: fixed;
 }
 
-
-.musicSection{
+.musicSection {
   background-color: $second-color;
   padding-top: 0;
   position: relative;
@@ -320,7 +321,7 @@ section{
   margin-top: -5%;
 }
 
-.playBox{
+.playBox {
   background: $second-color;
   height: 60%;
   width: 100%;
@@ -334,43 +335,43 @@ section{
   margin-top: -5%;
 }
 
-
 /////////
 
-.cookies{
+.cookies {
   width: 100%;
   height: 100%;
   position: relative;
   display: flex;
   align-items: center;
   flex-direction: column;
-  .cookieMusic{
+  .cookieMusic {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     position: relative;
-    img{
+    img {
       height: 100%;
       position: absolute;
     }
-    .cookieImg{
+    .cookieImg {
       animation: rotateCookie 5s infinite linear;
     }
   }
 
-  .name{
+  .name {
     color: $main-color;
     font-family: $font-title;
     font-size: 2rem;
     z-index: 2;
     margin-top: -10%;
   }
-  .maxMusicInformation{
+  .maxMusicInformation {
     overflow: hidden;
     width: 20%;
     margin: 1% 0;
-    .musicInformation{
+    .musicInformation {
+      font-size: 1rem;
       width: 150%;
       color: white;
       font-family: $font-p;
@@ -379,97 +380,94 @@ section{
   }
 }
 
-@keyframes rotateCookie{
-  0%{
+@keyframes rotateCookie {
+  0% {
     transform: rotate(0);
   }
-  50%{
+  50% {
     transform: rotate(180deg);
   }
-  100%{
+  100% {
     transform: rotate(360deg);
   }
 }
 
-@keyframes musicInformation{
-  0%{
+@keyframes musicInformation {
+  0% {
     transform: translateX(100%);
   }
-  100%{
+  100% {
     transform: translateX(-100%);
   }
 }
 
-.controller{
+.controller {
   display: flex;
   flex-direction: column;
   align-items: center;
   z-index: 2;
   margin-top: -5%;
-  .musicLine{
+  .musicLine {
     margin: -2% 0 1% 0;
     width: 20%;
   }
 }
 
-.change{
+.change {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 20%;
   color: #0c6a41;
   font-size: 1.5rem;
-  i{
+  i {
     outline: none;
-    &:nth-child(2), &:nth-child(4){
-      &:hover{
+    &:nth-child(2),
+    &:nth-child(4) {
+      &:hover {
         transform: scale(1.5);
       }
     }
-    &:nth-child(3){
+    &:nth-child(3) {
       font-size: 3rem;
     }
   }
 }
 
-
-
-
-
 //  RWD ipad
-@media (max-width: 1026px){  
+@media (max-width: 1026px) {
   //  header
-  .mainPage{
+  .mainPage {
     height: 85vh;
-    background-image: url('../img/headerBackground2.png');
+    background-image: url("../img/headerBackground2.webp");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: 250px 300px ;
+    background-position: 250px 300px;
   }
-  .mainLeft{
+  .mainLeft {
     position: relative;
     margin-left: 0%;
-    .smallWords{
+    .smallWords {
       position: absolute;
       right: -50%;
       top: 0;
       z-index: 2;
     }
-    .dateMobile{
+    .dateMobile {
       display: block;
       z-index: 2;
     }
   }
 
-  ul li a{
+  ul li a {
     font-size: 1.5rem;
   }
 
-  .title{
+  .title {
     margin-top: 50%;
   }
 
-  .dateMobile{
+  .dateMobile {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -480,57 +478,57 @@ section{
     top: 70%;
     color: $main-color;
     font-family: $font-title;
-    h1{
+    h1 {
       display: inline;
       width: 40%;
       font-size: 10rem;
       line-height: 10rem;
     }
-    .month{
+    .month {
       width: 40%;
       display: inline-flex;
       flex-direction: column;
       position: absolute;
     }
-    span{
+    span {
       width: 70%;
       font-weight: 500;
       font-size: 3rem;
       line-height: 3rem;
       border-bottom: $main-color solid 2px;
-      &:nth-child(1){
+      &:nth-child(1) {
         margin-top: 30%;
       }
     }
   }
-  .mainRight{
-    .date{
+  .mainRight {
+    .date {
       display: none;
     }
-    .mainPicture{
+    .mainPicture {
       display: none;
     }
   }
 
-  //  section 
-  section{
+  //  section
+  section {
     flex-direction: column;
-    .picture{
+    .picture {
       justify-content: center;
-      h2{
+      h2 {
         left: -10%;
         top: 20%;
         font-size: 6rem;
       }
-      img{
+      img {
         margin-top: 20%;
         width: 90%;
         height: 80%;
       }
     }
-    .article{
+    .article {
       align-items: center;
-      span{
+      span {
         font-size: 2rem;
         letter-spacing: 1px;
         padding-bottom: 0;
@@ -538,12 +536,12 @@ section{
       }
     }
   }
-  .newsSection{
-    .picture{
+  .newsSection {
+    .picture {
       order: 1;
       justify-content: center;
       width: 90%;
-      h2{
+      h2 {
         top: 10%;
         left: 0%;
       }
@@ -551,53 +549,51 @@ section{
   }
 
   //  background
-  .background{
-    img{
+  .background {
+    img {
       bottom: 0%;
     }
   }
   //  cookie music
-  .cookies{
-    .name{
+  .cookies {
+    .name {
       font-size: 4rem;
       margin-top: -10%;
     }
-    .maxMusicInformation{
+    .maxMusicInformation {
       width: 60%;
       margin: 3% 0;
-      p{
+      p {
         font-size: 2rem;
       }
     }
   }
-  .controller{
+  .controller {
     margin-top: 0%;
-    .musicLine{
+    .musicLine {
       width: 60%;
     }
   }
-  .change{
+  .change {
     width: 60%;
     font-size: 3rem;
     margin-top: 2%;
-    i{
-      &:nth-child(3){
+    i {
+      &:nth-child(3) {
         font-size: 4rem;
       }
     }
   }
 }
 
-
-
 //  RWD mobile
-@media (max-width: 500px){
-  nav{
-    ul{
+@media (max-width: 500px) {
+  nav {
+    ul {
       display: none;
     }
   }
-  .ham{
+  .ham {
     z-index: 200;
     position: fixed;
     top: 5%;
@@ -608,18 +604,19 @@ section{
     width: 30px;
     height: 30px;
     cursor: pointer;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
 
-  .line{
+  .line {
     width: 30px;
     height: 5px;
     background: $main-color;
     transition: all 0.3s ease-in-out;
   }
 
-  .line::before, .line::after{
-    content: '';
+  .line::before,
+  .line::after {
+    content: "";
     position: absolute;
     width: 30px;
     height: 5px;
@@ -627,152 +624,152 @@ section{
     transition: all 0.3s ease-in-out;
   }
 
-  .line::after{
+  .line::after {
     transform: translateY(10px);
   }
 
-  .line::before{
+  .line::before {
     transform: translateY(-10px);
   }
 
-  .ham.open .line{
+  .ham.open .line {
     transform: translateX(-50px);
     background: transparent;
     box-shadow: none;
   }
 
-  .ham.open .line::before{
+  .ham.open .line::before {
     transform: rotate(45deg) translate(35px, -35px);
   }
 
-  .ham.open .line::after{
+  .ham.open .line::after {
     transform: rotate(-45deg) translate(35px, 35px);
   }
-  nav.open{
+  nav.open {
     position: fixed;
     flex-direction: column;
     width: 100vw;
     height: 100vh;
     background-color: $second-color;
     padding: 10%;
-    .logo{
+    .logo {
       width: 100%;
       height: 15%;
       display: flex;
       justify-content: center;
       animation: logoJump 1s ease-in-out infinite;
     }
-    ul{
+    ul {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      li{
+      li {
         margin: 30% 0;
       }
     }
   }
 
   @keyframes logoJump {
-    0%{
+    0% {
       transform: translateY(0);
     }
-    50%{
+    50% {
       transform: translateY(-20%);
     }
-    100%{
+    100% {
       transform: translateY(0);
     }
   }
 
   //  header
-  .mainPage{
-    background-position: 100px 100px ;
+  .mainPage {
+    background-position: 100px 100px;
   }
-  .mainLeft{
-    .smallWords{
+  .mainLeft {
+    .smallWords {
       right: 0%;
       top: 0%;
-      p{
+      p {
         font-size: 16px;
       }
     }
   }
 
-  .title{
+  .title {
     margin-top: 50%;
-    span{
+    span {
       font-size: 4rem;
       line-height: 4rem;
     }
   }
 
-  .dateMobile{
+  .dateMobile {
     left: 10%;
     top: 75%;
-    h1{
+    h1 {
       font-size: 7rem;
       line-height: 7rem;
     }
-    span{
+    span {
       font-size: 2rem;
       line-height: 2rem;
     }
   }
 
-  //  section 
-  section{
+  //  section
+  section {
     padding-top: 30%;
-    .picture{
-      h2{
+    .picture {
+      h2 {
         left: -15%;
         top: 20%;
         font-size: 3rem;
       }
     }
-    .article{
+    .article {
       align-items: center;
-      span{
+      span {
         font-size: 1rem;
         line-height: 3rem;
       }
     }
   }
   //  background
-  .background{
-    h2{
+  .background {
+    h2 {
       font-size: 3rem;
     }
   }
 
   //  cookie music
-  .cookies{
+  .cookies {
     max-width: 300px;
     max-height: 300px;
-    .name{
+    .name {
       font-size: 2rem;
       margin-top: -10%;
     }
-    .maxMusicInformation{
+    .maxMusicInformation {
       width: 60%;
       margin: 3% 5%;
-      p{
+      p {
         font-size: 50%;
       }
     }
   }
-  .controller{
+  .controller {
     margin: 0;
     margin-top: -30%;
-    .musicLine{
+    .musicLine {
       width: 60%;
     }
   }
-  .change{
+  .change {
     width: 60%;
     font-size: 1rem;
-    margin-top: 2%;    
-    i{
-      &:nth-child(3){
+    margin-top: 2%;
+    i {
+      &:nth-child(3) {
         font-size: 2rem;
       }
     }

@@ -101,7 +101,7 @@ ul li a {
 }
 
 ul li a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -110,8 +110,8 @@ ul li a::after {
   background-color: #0c6a41;
   -webkit-transform: translateY(3px);
           transform: translateY(3px);
-  -webkit-transition: all .25s ease-in-out;
-  transition: all .25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 ul li a:hover::after {
@@ -165,7 +165,7 @@ ul li a:hover::after {
 }
 
 .title span::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 3px;
@@ -479,6 +479,7 @@ section .article span {
 }
 
 .cookies .maxMusicInformation .musicInformation {
+  font-size: 1rem;
   width: 150%;
   color: white;
   font-family: "Syne", sans-serif;
@@ -589,7 +590,7 @@ section .article span {
 @media (max-width: 1026px) {
   .mainPage {
     height: 85vh;
-    background-image: url("../img/headerBackground2.png");
+    background-image: url("../img/headerBackground2.webp");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 250px 300px;
@@ -762,8 +763,8 @@ section .article span {
     width: 30px;
     height: 30px;
     cursor: pointer;
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
   .line {
     width: 30px;
@@ -772,8 +773,9 @@ section .article span {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
-  .line::before, .line::after {
-    content: '';
+  .line::before,
+  .line::after {
+    content: "";
     position: absolute;
     width: 30px;
     height: 5px;
