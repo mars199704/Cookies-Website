@@ -578,13 +578,9 @@ section .article span {
   outline: none;
 }
 
-.change i:nth-child(2):hover, .change i:nth-child(4):hover {
+.change i:nth-child(2):hover, .change i:nth-child(3):hover, .change i:nth-child(4):hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
-}
-
-.change i:nth-child(3) {
-  font-size: 3rem;
 }
 
 @media (max-width: 1026px) {
@@ -734,11 +730,7 @@ section .article span {
   }
   .change {
     width: 60%;
-    font-size: 3rem;
     margin-top: 2%;
-  }
-  .change i:nth-child(3) {
-    font-size: 4rem;
   }
 }
 
@@ -945,11 +937,7 @@ section .article span {
   }
   .change {
     width: 60%;
-    font-size: 1rem;
     margin-top: 2%;
-  }
-  .change i:nth-child(3) {
-    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=all.css.map */

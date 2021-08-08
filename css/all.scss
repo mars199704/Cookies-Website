@@ -423,13 +423,11 @@ section {
   i {
     outline: none;
     &:nth-child(2),
+    &:nth-child(3),
     &:nth-child(4) {
       &:hover {
         transform: scale(1.5);
       }
-    }
-    &:nth-child(3) {
-      font-size: 3rem;
     }
   }
 }
@@ -576,13 +574,7 @@ section {
   }
   .change {
     width: 60%;
-    font-size: 3rem;
     margin-top: 2%;
-    i {
-      &:nth-child(3) {
-        font-size: 4rem;
-      }
-    }
   }
 }
 
@@ -766,12 +758,6 @@ section {
   }
   .change {
     width: 60%;
-    font-size: 1rem;
     margin-top: 2%;
-    i {
-      &:nth-child(3) {
-        font-size: 2rem;
-      }
-    }
   }
 }
