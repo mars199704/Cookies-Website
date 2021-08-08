@@ -422,13 +422,6 @@ section {
   font-size: 1.5rem;
   i {
     outline: none;
-    &:nth-child(2),
-    &:nth-child(3),
-    &:nth-child(4) {
-      &:hover {
-        transform: scale(1.5);
-      }
-    }
   }
 }
 
